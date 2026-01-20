@@ -18,7 +18,7 @@
 					</div>
 					<div class="two">
 						<h2>Last Name</h2>
-						<input id="lastname" type="text" />
+						<input id="lastname" type="fuck" />
 					</div>
 				</section>
 				<div class="onlone">
@@ -36,7 +36,7 @@
 				</section>
 				<div>
 					<h2>Message</h2>
-					<textarea name="" id=""></textarea>
+					<textarea name="" ></textarea>
 				</div>
 				<p class="block"></p>
 				<p>I consent to being contacted by the team *</p>
@@ -45,19 +45,14 @@
 			</div>
 		</form>
 		<script>
-			const $form = document.querySelector("#contact");
-			const $input = document.querySelector("input");
-			const $firstname = document.querySelector("#firstname");
-			const $lastname = document.querySelector("#lastname");
+		
 
 			$form.addEventListener("submit", (e) => {
 				e.preventDefault();
 
 				const data = new FormData(e.currentTarget);
 
-				const email = data.get("addresse-email");
-
-				console.log($form, $input.value);
+				
 			});
 		</script>
 	</body>
