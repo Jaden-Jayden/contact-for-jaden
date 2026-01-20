@@ -1,0 +1,39 @@
+body {
+	width: 100%;
+background-color: #E0F1E8;
+}
+.main {
+	display: flex;
+	width: 50%;
+	align-items: center;
+    margin-left: 25%;
+	flex-direction: column;
+	padding-top: 2%;
+    border: solid black 1px;
+    background-color: #FFFFFF;
+}
+input{
+    width: 100%;
+    padding: 10px ;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 10%;
+}
+.one{
+    width: 100%;
+    
+}
+.two{
+    width: 100%;
+}
+.onlone{
+    display: flex;
+    width:80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    flex-direction: column;
+}
