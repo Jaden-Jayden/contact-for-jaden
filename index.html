@@ -5,54 +5,59 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="script.js" />
 	</head>
 	<body>
 		<form id="contact" action="">
+			<div class="k" id="black">
+				<h2><img src="Check.svg" alt="" />Message Sent!</h2>
+				<p>Thanks for completing the form. We’ll be in touch soon!</p>
+			</div>
 			<div class="main">
-				<h1>Contact Us</h1>
-				<section>
-					<div class="one">
-						<h2>First Name</h2>
-						<input id="firstname" type="text" />
+				<section class="textt">
+					<h1>Contact Us</h1>
+					<section>
+						<div class="one">
+							<h2>First Name</h2>
+							<input id="firstname" type="text" required />
+						</div>
+						<div class="two">
+							<h2>Last Name</h2>
+							<input id="lastname" type="fuck" required />
+						</div>
+					</section>
+					<div class="onlone">
+						<h2>Email Address</h2>
+						<input type="text" required />
 					</div>
-					<div class="two">
-						<h2>Last Name</h2>
-						<input id="lastname" type="fuck" />
+					<h2 class="Query">Query Type</h2>
+					<section class="choice">
+						<div class="one">
+							<input type="General Enquiry" />
+						</div>
+						<div class="two">
+							<input type="Support Request" />
+						</div>
+					</section>
+					<div>
+						<h2>Message</h2>
+						<textarea class="mmessage" name="Message" required></textarea>
 					</div>
-				</section>
-				<div class="onlone">
-					<h2>Email Address</h2>
-					<input type="text" />
-				</div>
-				<h2>Query Type</h2>
-				<section>
-					<div class="one">
-						<input type="General Enquiry" />
-					</div>
-					<div class="two">
-						<input type="Support Request" />
-					</div>
-				</section>
-				<div>
-					<h2>Message</h2>
-					<textarea name="" ></textarea>
-				</div>
-				<p class="block"></p>
-				<p>I consent to being contacted by the team *</p>
+					<p class="block"></p>
+					<p>I consent to being contacted by the team *</p>
 
-				<button>Sumbit</button>
+					<button>Sumbit</button>
+				</section>
 			</div>
 		</form>
 		<script>
-		
+			const $form = document.querySelector("form");
+			const $black = document.querySelector("#black");
 
 			$form.addEventListener("submit", (e) => {
 				e.preventDefault();
 
+				document.getElementById("black").style.visibility = "visible";
 				const data = new FormData(e.currentTarget);
-
-				
 			});
 		</script>
 	</body>

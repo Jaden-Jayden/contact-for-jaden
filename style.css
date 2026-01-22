@@ -1,39 +1,79 @@
 body {
 	width: 100%;
-background-color: #E0F1E8;
+	background-color: #e0f1e8;
 }
 .main {
 	display: flex;
 	width: 50%;
 	align-items: center;
-    margin-left: 25%;
+	margin-left: 25%;
 	flex-direction: column;
 	padding-top: 2%;
-    border: solid black 1px;
-    background-color: #FFFFFF;
+	border-radius: 12px;
+	border: solid white 1px;
+	background-color: #ffffff;
+	color: #2a4144;
 }
-input{
-    width: 100%;
-    padding: 10px ;
+.textt {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+    justify-items: center;
 }
-section{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    gap: 10%;
+h1 {
+	width: 30%;
+	padding-right: 50%;
+	font-family: Karla;
+	font-weight: 700;
+	font-style: Bold;
+	font-size: font-size/heading;
+	line-height: 100%;
+	letter-spacing: -1px;
 }
-.one{
-    width: 100%;
-    
+input {
+	width: 100%;
+	padding: 10px;
 }
-.two{
-    width: 100%;
+section {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	gap: 10%;
 }
-.onlone{
-    display: flex;
-    width:80%;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: left;
-    flex-direction: column;
+.choice {
+	display: flex;
+}
+.one {
+	width: 100%;
+}
+.two {
+	width: 100%;
+}
+.onlone {
+	display: flex;
+	width: 90%;
+flex-direction: column;
+}
+.mmessage {
+	display: flex;
+	padding: 50px 150px;
+}
+button {
+	background-color: #0c7d69;
+	width: 90%;
+}
+.k {
+	display: flex;
+	text-align: left;
+	flex-direction: column;
+	width: 25%;
+	margin: auto;
+	padding: 8px 16px;
+	border-radius: 12px;
+	border: solid 1px #2a4144;
+	background-color: #2a4144;
+	color: #ffffff;
+	visibility: hidden;
 }
